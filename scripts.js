@@ -89,7 +89,7 @@ for (var i = 0; i < maxStars; i++) {
 function animation() {
  ctx.globalCompositeOperation = 'source-over';
  ctx.globalAlpha = 0.5;         //尾巴
- ctx.fillStyle = 'hsla(' + hue + ', 64%, 6%, 2)';
+ ctx.fillStyle = 'hsla(' + hue + ', 64%, 6%, 100)';
  ctx.fillRect(0, 0, w, h)
 
  ctx.globalCompositeOperation = 'lighter';
