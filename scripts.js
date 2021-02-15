@@ -7,7 +7,7 @@ ctx = canvas.getContext('2d'),
 w = canvas.width = window.innerWidth,
 h = canvas.height = window.innerHeight,
 
-hue = 217,
+hue = 60,
 stars = [],
 count = 0,
 maxStars = 1000;    //星星数量,默认1300
@@ -18,7 +18,7 @@ canvas2.height = 100;
 var half = canvas2.width / 2,
 gradient2 = ctx2.createRadialGradient(half, half, 0, half, half, half);
 gradient2.addColorStop(0.025, '#FF0');
-gradient2.addColorStop(0.1, 'hsl(' + hue + ', 61%, 33%)');
+gradient2.addColorStop(0.1, 'hsl(' + hue + ', 61%, 50%)');
 gradient2.addColorStop(0.25, 'hsl(' + hue + ', 64%, 6%)');
 gradient2.addColorStop(1, 'transparent');
 
