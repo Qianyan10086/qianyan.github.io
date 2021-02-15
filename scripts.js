@@ -10,7 +10,7 @@ h = canvas.height = window.innerHeight,
 hue = 217,
 stars = [],
 count = 0,
-maxStars = 1100;    //星星数量,默认1300
+maxStars = 114514;    //星星数量,默认1300
 var canvas2 = document.createElement('canvas'),
 ctx2 = canvas2.getContext('2d');
 canvas2.width = 100;
