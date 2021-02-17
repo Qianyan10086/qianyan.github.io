@@ -7,18 +7,18 @@ ctx = canvas.getContext('2d'),
 w = canvas.width = window.innerWidth,
 h = canvas.height = window.innerHeight,
 
-hue = 60,
+hue = 217,
 stars = [],
 count = 0,
-maxStars = 1000;    //星星数量,默认1300
+maxStars = 1100;    //星星数量,默认1300
 var canvas2 = document.createElement('canvas'),
 ctx2 = canvas2.getContext('2d');
 canvas2.width = 100;
 canvas2.height = 100;
 var half = canvas2.width / 2,
 gradient2 = ctx2.createRadialGradient(half, half, 0, half, half, half);
-gradient2.addColorStop(0.025, '#FF0');
-gradient2.addColorStop(0.1, 'hsl(' + hue + ', 61%, 50%)');
+gradient2.addColorStop(0.025, '#FFF');
+gradient2.addColorStop(0.1, 'hsl(' + hue + ', 61%, 33%)');
 gradient2.addColorStop(0.25, 'hsl(' + hue + ', 64%, 6%)');
 gradient2.addColorStop(1, 'transparent');
 
@@ -58,7 +58,7 @@ var Star = function() {
  this.orbitX = w / 2;
  this.orbitY = h / 2;
  this.timePassed = random(0, maxStars);
- this.speed = random(this.orbitRadius) / 10000;  //星星移动速度,值越大越慢,默认5W
+ this.speed = random(this.orbitRadius) / 80000;  //星星移动速度,值越大越慢,默认5W
  
  this.alpha = random(2, 10) / 10;
 
@@ -89,7 +89,7 @@ for (var i = 0; i < maxStars; i++) {
 function animation() {
  ctx.globalCompositeOperation = 'source-over';
  ctx.globalAlpha = 0.5;         //尾巴
- ctx.fillStyle = 'hsla(' + hue + ', 64%, 6%, 100)';
+ ctx.fillStyle = 'hsla(' + hue + ', 64%, 6%, 2)';
  ctx.fillRect(0, 0, w, h)
 
  ctx.globalCompositeOperation = 'lighter';
